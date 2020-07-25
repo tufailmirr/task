@@ -232,3 +232,58 @@ body {
   background-size: contain;
   border-radius: 15px;
 }
+
+/*css for filteration*/
+.fill-btn {
+  margin: 5px 5px 5px 5px;
+  padding: 2px 2px 2px 2px;
+  align-items: center;
+}
+.fill-btn label {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 20px;
+  border: none;
+  display: inline-block;
+  padding: 5px 3px 5px 5px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+.fill-btn input {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 5px 3px 5px 5px;
+  height: 30px;
+}
+select {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 5px 3px 5px 5px;
+  height: 30px;
+}
+
+.container {
+  width: 60%;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 350px 100px;
+  grid-gap: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
