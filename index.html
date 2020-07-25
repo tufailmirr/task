@@ -213,7 +213,7 @@
         
         
         
-        
+  <!--vue code here-->      
         
         
         
@@ -233,7 +233,8 @@
 
 
                 </select>
-                <input @change="changedate($event)" type="date" value="2020-07-24" min="1990-07-10" max="2050=07-1">
+                <input @change="changedate($event)" 
+                type="date" value="x = new Date().toString().slice(4,15)" min="1990-07-10" max="2050=07-1">
             </div>
             <div v-for="elements in info" v-if="compare(elements)"
              style="width: 20%; align-items: center;
@@ -270,7 +271,7 @@
                     name: "tufail",
                     info: null,
                     status: "all",
-                    date: '1990-08-1',
+                    date: '1800-08-1',
                     flag : null
                 },
             mounted: function () {
@@ -290,10 +291,12 @@
                 // for filteration of given api's
                 methods : {
                     compare: function (ele) {
-                        if (this.status == 'all') {
+                        if (this.status == 'all' 
+                        && ele.date.slice(0, 10) > this.date) {
                             return true
                         } else {
-                            if (ele.status == this.status && ele.date.slice(0, 10) > this.date) {
+                            if (ele.status == this.status 
+                            && ele.date.slice(0, 10) > this.date) {
 
                                 return true
                             } else {
