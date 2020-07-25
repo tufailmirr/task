@@ -1,0 +1,234 @@
+html,
+body,
+body * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: 20px;
+}
+
+.navBar {
+  padding: 20px;
+  width: 70px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.icon img {
+  margin-bottom: 30px;
+}
+
+.topHeader {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchInput {
+  width: 30vw;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #eeeeee;
+  outline: none;
+  border: none;
+}
+
+.otherSection {
+  display: flex;
+  align-items: center;
+}
+
+.otherSection > div {
+  padding: 10px;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user .userImage {
+  padding-left: 10px;
+}
+
+.topHeader img {
+  max-width: 20px;
+}
+
+.hiJhon {
+  display: flex;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.hiJhon h3 {
+  margin-bottom: 10px;
+}
+
+.hiJhon button {
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: none;
+}
+
+.heroImage {
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.blogsHeader {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.viewAll {
+  color: grey;
+}
+
+.blog {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.blogHeading {
+  color: #6b6b6b;
+  font-weight: bold;
+}
+
+.blogFooter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogImages img {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #eeeeee;
+  border-radius: 50%;
+}
+
+.blogImages img:not(:first-child) {
+  margin-left: -15px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likes p {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.column2 {
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.upperSectiondDiv {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #b4b4b4;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.leftSection img,
+.rightSection img {
+  margin-right: 10px;
+  max-width: 40px;
+  padding: 10px;
+  background-color: rgb(255, 203, 211);
+  border-radius: 10px;
+}
+
+.rightSection img {
+  margin: 0px;
+  background-color: rgb(199, 199, 199);
+}
+
+.detailHeading {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.detailValue {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.upperSection {
+  border-radius: 10px;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+.upperSection > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 20px;
+}
+
+.followerSection {
+  padding: 20px;
+}
+
+.followerImages {
+  display: flex;
+  overflow: hidden;
+}
+
+.followerImages img {
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  border-radius: 15px;
+}
